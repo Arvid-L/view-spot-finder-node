@@ -8,7 +8,7 @@ const invalid_mesh_values = require('./test_data/invalid_mesh_values.json');
 
 const {validator} = require('../lib/mesh_validator.js')
 
-describe('Mesh Validatior', () => {
+describe('Mesh Validator', () => {
 
   it('validates JSON mesh correctly', () => {
     expect(validator(valid_mesh)).toBe(true)
