@@ -1,0 +1,27 @@
+{
+  "name": "view-spot-finder-node",
+  "version": "1.0.0",
+  "description": "Returns a list of view spots from a map mesh in JSON format.",
+  "main": "handler.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --watchAll --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arvid-L/view-spot-finder-node.git"
+  },
+  "author": "Arvid Lindenau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arvid-L/view-spot-finder-node/issues"
+  },
+  "homepage": "https://github.com/Arvid-L/view-spot-finder-node#readme",
+  "dependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.5.0",
+    "underscore": "^1.13.2"
+  }
+}
