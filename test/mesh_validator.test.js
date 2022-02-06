@@ -1,7 +1,7 @@
 const valid_json = require("./test_data/mesh.json");
 const invalid_json = {}
 
-let {validator} = require('./../lib/view_spot_finder.js')
+let {validator} = require('../lib/mesh_validator.js')
 
 describe('View Spot Finder', () => {
 
