@@ -2,9 +2,9 @@ const validMesh = require('./test_data/mesh.json');
 const validMesh10000 = require('./test_data/mesh_x_sin_cos_10000.json');
 const validMesh20000 = require('./test_data/mesh_x_sin_cos_20000.json');;
 
-const invalidMeshElements = require('./test_data/invalid_mesh_elements.json');
-const invalidMeshNodes = require('./test_data/invalid_mesh_nodes.json');
-const invalidMeshValues = require('./test_data/invalid_mesh_values.json');
+const invalidElementsMesh = require('./test_data/invalid_mesh_elements.json');
+const invalidNodesMesh = require('./test_data/invalid_mesh_nodes.json');
+const invalidValuesMesh = require('./test_data/invalid_mesh_values.json');
 
 const {meshValidator} = require('../lib/meshValidator.js')
 
@@ -18,9 +18,9 @@ describe('Mesh Validator', () => {
   })
 
   it('throws correct errors', () => {
-    expect(() => { meshValidator(invalidMeshElements) }).toThrowError(/Invalid 'element'/)
-    expect(() => { meshValidator(invalidMeshNodes) }).toThrowError(/Invalid 'node'/)
-    expect(() => { meshValidator(invalidMeshValues) }).toThrowError(/Invalid 'value'/)
+    expect(() => { meshValidator(invalidElementsMesh) }).toThrowError(/Invalid 'element'/)
+    expect(() => { meshValidator(invalidNodesMesh) }).toThrowError(/Invalid 'node'/)
+    expect(() => { meshValidator(invalidValuesMesh) }).toThrowError(/Invalid 'value'/)
   })
     
 })

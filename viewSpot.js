@@ -1,5 +1,4 @@
 const fs = require("fs");
-
 const {viewSpotFinder} = require('./lib/viewSpotFinder.js')
 const {meshValidator} = require('./lib/meshValidator.js')
 
@@ -9,6 +8,7 @@ if (cliArguments.length < 2) {
   console.error("USAGE: node viewSpot.js <path/to/mesh/file.json> <number of view spots>")
   return
 }
+
 const meshFile = cliArguments[0] 
 const numberOfViewSpots = cliArguments[1] || 0 
 
