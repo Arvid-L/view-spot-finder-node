@@ -15,7 +15,8 @@ const numberOfViewSpots = cliArguments[1] || 0
 if (fs.existsSync(meshFile)){
   const meshObject = require(meshFile)
   meshValidator(meshObject)
-  viewSpotFinder(meshObject, numberOfViewSpots)
+  const viewSpots = viewSpotFinder(meshObject, numberOfViewSpots)
+  console.log(viewSpots);
 } else {
   console.error(`file ${meshFile} does not exist`)
 }
