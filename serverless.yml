@@ -9,5 +9,5 @@ provider:
   runtime: nodejs14.x
 
 functions:
-  hello:
-    handler: handler.viewSpot
+  viewSpotFinder:
+    handler: handler.viewSpotFinder
